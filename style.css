@@ -1,0 +1,53 @@
+body{
+    background: linear-gradient(to bottom right, rgb(0, 0, 121), rgb(0, 0, 21));
+    height: 150vh;
+    background-repeat: no-repeat;
+    justify-items: center;
+}
+
+.h{
+     color: white;
+    text-align: center;
+    font-family: 'Jersey 20';
+    font-size: 70px;
+    font-weight: 300;
+    animation: flicker 4s infinite;
+    animation: float 3s ease-in-out infinite;
+    vertical-align: middle;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes flicker {
+    0%, 85%, 100% {
+        text-shadow: none;
+        opacity: 1;
+    }
+    86%, 88% {
+        text-shadow: 0 0 8px #fff, 0 0 16px #00faff, 0 0 24px #00faff;
+        opacity: 0.9;
+    }
+    89%, 90% {
+        text-shadow: none;
+        opacity: 0.8;
+    }
+    91%, 94% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #00faff, 0 0 30px #00faff;
+        opacity: 1;
+    }
+}
+
+.Thankyou_p{
+    font-size: 25px;
+    text-align: center;
+    width: 1000px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
